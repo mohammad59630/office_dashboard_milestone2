@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>office Dashbaord</title>
+    
+    <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/spacelab/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" type="text/css" />
+    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/graph.js"></script>
+
+</head>
+<body>
+      <body class="set-background">
+    <!-- /Top Title Bar/ -->
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 top-bar">
+               <a href="#" class="title">office Dashboard</a>
+               <a href="javascript:dc.filterAll(); dc.renderAll();" id="reset-filters" class="btn btn-sm btn-default reset-filters-top">Reset<span class="hidden-xs"> All</span> Filters</a> (it'll still look like a button because of the bootstrap classes)
+                
+
+            </div>
+        </div>
+    </nav>
+                    <!--Header-->
+         <header class="container-fluid">
+             <div class="row">
+                 <div class="col-xs-4">
+                     <div class="content-wrapper">
+                    <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                    <h3 class="heading--h3">Introduction</h3>
+                    <div class="hide-content-toggle">
+                        <hr>
+                        <p>This page contains data  from the the purpose of create the office database <a href=" https://www.google.co.uk/data.csv" target="_blank" class="inline-link" title="Office Database">Dashboard</a> for over 1000 different jobTitles.</p>
+                        <p>The data visualizations that follow give a high-level overview of the data and clicking on the individual charts allows you to filter the results.</p>
+                        <p>Once you have made your selections, you can look at the dropdown below to see who you have left. </p>
+                        <p>Or maybe you just want to view the stats of different jobTitle? Choose one below and the page will display information for just that jobtitle.</p>
+                        <hr>
+                        <div class="dropdown-filter">
+                            <div>Filter by jobTitle:</div>
+                            <div id="jobTitle-selector"></div>
+                        </div>
+                        <p><small>If a chart shows as empty, or doesn't add up to the same total as another charts filter, this is normal. Some comic heroes have a small number of missing attributes. The charts will automatically filter out blank data if there is something else to show.</small></p>
+                        <p><small>This is intentional, and designed to preserve the integrity of the original dataset.</small></p>
+
+                    </div>
+                </div>
+                 </div>
+                 <div class="col-xs-4">
+                     <div class="content-wrapper">
+                    <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                    <h3 class="heading--h3">Gender</h3>
+                    <div class="hide-content-toggle">
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div><i class="fas fa-venus gender-icon color--pink"></i></div>
+                                <div class="gender-percent">
+                                    <div id="percent-female"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div><i class="fas fa-mars gender-icon color--blue"></i></div>
+                                <div class="gender-percent">
+                                    <div id="percent-male"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <p class="gender-text">A  men outnumber women by 2.5 to 1.</p>
+                       
+                        <hr>
+                        <div class="dropdown-filter">
+                            <div>Filter data by gender:</div>
+                            <div id="gender-selector"></div>
+                        </div>
+                    </div>
+                </div>
+                       
+                 </div>
+                
+                      <div class="col-xs-4">
+                     <div class="content-wrapper">
+                    <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                    <h3 class="heading--h3">Gender Balance</h3>
+                    <div class="hide-content-toggle">
+                        <hr>
+                        <div id="gender-balance" class="chart"></div>
+                        <p>The Men outcome women 1 to 10</p>
+                    </div>
+                </div>
+                </header>
+                              <!--Section -->
+                <section class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="content-wrapper">
+                                 <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                                           <h3 class="heading--h3">Average Bonus</h3>
+                                                        <div class="hide-content-toggle">
+                        
+                        <div id="average-bonus" class="chart"></div>
+                        <p>The Men outcome women 1 to 10</p>
+                    </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                             <div class="content-wrapper">
+                                 <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                     <p class="section-paragraph">Distribution of jobtitle is weighted towards the upper level for men.</p>           
+                    <h3 class="heading--h3">jobtitle distribution</h3>
+                    <div class="hide-content-toggle">
+                        <hr>
+                        <div id="jobtitle-distribution" class="chart"></div>
+                        <p>The Men outcome women 1 to 10</p> 
+                             </div>
+                        </div>
+                    </div>
+                        
+                  
+                        </div>
+                      
+                           
+                   
+                   
+                        </div>
+                 
+                         
+                           <div class="row">
+                           <div class="col-xs-4 col-sm-4">
+                            <div class="content-wrapper">
+                               <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                                  <h3 class="heading--h3">show per person perfEval</h3>
+                                   <p class="section-paragraph">in this section show the per person perfEval</p>
+                                  <div class="hide-content-toggle"></div>
+                                      <div id="per-perfEval-chart"></div>
+                                   <p> The person preformenc evualation per person mean per gender weather is male or female also calcualte the performance 
+                                   per person with per job titles.</p>                                 
+                                  <p class="section-paragraph">in this section show the per person perfEval</p
+                          </div>
+                    </div>
+     </div>
+              <div class="col-xs-4 col-sm-4">
+                 <div class="content-wrapper">
+                     <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                      <h3 class="heading--h3">show per person age</h3>
+                <p class="section-paragraph">in this section show the age per person mean each age group male and female age group effect with the each 
+                jobTitles per age per person</p>
+                  <div class="hide-content-toggle"></div>
+                 <div id="per-age-chart"></div>
+                 <p>JobTitles same to different each jobTitle have gender group for per age group male and Female show the effect of age with gender.</p>
+                 <p>Even each age group work in different jobtitles with experince education and diffrent department where they work.</p>
+                 </div>
+                 </div>
+                 <div class="col-xs-4 col-sm-4">
+                 <div class="content-wrapper">
+                     <div><i class="fas fa-angle-up hide-content-btn"></i></div>
+                      <h3 class="heading--h3">show per person bonus</h3>
+                <p class="section-paragraph">in this section show the bonus per person</p>
+                  <div class="hide-content-toggle"></div>
+                 <div id="per-bonus-chart"></div>
+                <p>show the bonus per person with per gender weather male or female with different job titles weather software Engineer weather driver etc.</p>
+                 <p>Even each of group in each jobTitle have a different criteria bonus depend the experince,education and performence </p>
+                 </div>
+             <div>
+    </section>
+            <!--Footer -->
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-xs-12 col-sm-4">
+                    <div>&copy;2019 Mohammad Javed</div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="https://github.com/ahsin59" target="_blank"><i class="fab fa-github github-logo"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div>Original unmodified dataset sourced from Gov.uk></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
+   
+   
+       
+                            
+</body>
+</html>
