@@ -17,7 +17,7 @@ As a user, I want to be able to view data on a number of jobTitle in different g
 As a user, I want to be able to view data on an individual jobTitle and see information such as gender, gender balance, Average Bonus, Jobtitle distribution, and so on.
 As a user, I want to be able to see which jobTitle are the most highly paid amongst the jobTitles as a whole.
 As a user, I want to be able to compare the data at various levels of detail, and to look for connections between the different Jobtitle distribution - for example, does gender have show the perfEval per person per age with per person bomus.
-As a user, I want to be able to draw my own conclusions from the data, for example, IT with bonus per person are more likely to have earn more bonus other then Data Scientist.
+As a user, I want to be able to draw my own conclusions from the data, for example, IT with bonus per person are more likely to have earn more bonus other then different jobTitles.
 As a user, I want to be able to easily reset the data and start over, and not have to worry about manually setting all the values back to their original values.
 Wireframes
 The first 2 wireframes (mobile & desktop) were created at the beginning of the project. Whilst they are similar to the final product, they do differ in that the final site displays more data visualization elements than the original wireframes showed.
@@ -51,6 +51,18 @@ Technologies Used
 The following technologies were used in the design and build of this project.
 
 <h3>Wireframes </h3>
+![project](https://user-images.githubusercontent.com/38302279/56258505-ac7ad400-60c7-11e9-92e9-8015e31911b7.png)
+![project1](https://user-images.githubusercontent.com/38302279/56258507-ad136a80-60c7-11e9-95a5-0a4bf38ab4e4.png)
+![project2](https://user-images.githubusercontent.com/38302279/56258508-ad136a80-60c7-11e9-9799-48bf59069471.png)
+![project4](https://user-images.githubusercontent.com/38302279/56258509-ad136a80-60c7-11e9-97f8-c1f0da98fdc9.png)
+![project5](https://user-images.githubusercontent.com/38302279/56258510-adac0100-60c7-11e9-875e-59e67068e81b.png)
+![project6](https://user-images.githubusercontent.com/38302279/56258511-adac0100-60c7-11e9-92c0-7e9c2ee1c23f.png)
+![p7](https://user-images.githubusercontent.com/38302279/56258539-c4525800-60c7-11e9-96d6-5e26477c0ead.png)
+![p8](https://user-images.githubusercontent.com/38302279/56258541-c4525800-60c7-11e9-8078-d83be7dc690a.png)
+![p9](https://user-images.githubusercontent.com/38302279/56258543-c4525800-60c7-11e9-8e7c-c604fb30d003.png)
+![p10](https://user-images.githubusercontent.com/38302279/56258544-c4eaee80-60c7-11e9-8d35-a35b9c418b8e.png)
+![p11](https://user-images.githubusercontent.com/38302279/56258545-c4eaee80-60c7-11e9-8f16-c59fdafd181e.png)
+
 <h5>Wireframes was used for creating the wireframes during the design stage.</h5>
 <h3>HTML5 & CSS3</h3>
 HTML5 & CSS3 were used to create the layout and styling of this site
