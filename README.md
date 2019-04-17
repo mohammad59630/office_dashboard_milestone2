@@ -51,17 +51,6 @@ Technologies Used
 The following technologies were used in the design and build of this project.
 
 <h3>Wireframes </h3>
-![project](https://user-images.githubusercontent.com/38302279/56258961-560e9500-60c9-11e9-9579-aff8819b7db9.png)
-![project1](https://user-images.githubusercontent.com/38302279/56258962-560e9500-60c9-11e9-82bf-8efb34459a3e.png)
-![project2](https://user-images.githubusercontent.com/38302279/56258964-560e9500-60c9-11e9-9efc-281115fe4103.png)
-![project4](https://user-images.githubusercontent.com/38302279/56258965-560e9500-60c9-11e9-8984-124ccde1a0e6.png)
-![project5](https://user-images.githubusercontent.com/38302279/56258966-56a72b80-60c9-11e9-806f-810b6d481c00.png)
-![project6](https://user-images.githubusercontent.com/38302279/56258967-56a72b80-60c9-11e9-98b9-2c30824f7bc0.png)
-![p7](https://user-images.githubusercontent.com/38302279/56259063-b43b7800-60c9-11e9-90d1-b5ff9b8c3b70.png)
-![p8](https://user-images.githubusercontent.com/38302279/56259064-b43b7800-60c9-11e9-9066-5eb0fb595f42.png)
-![p9](https://user-images.githubusercontent.com/38302279/56259065-b4d40e80-60c9-11e9-9f7b-43be88e05558.png)
-![p10](https://user-images.githubusercontent.com/38302279/56259066-b4d40e80-60c9-11e9-8e03-085fb8619dcd.png)
-![p11](https://user-images.githubusercontent.com/38302279/56259068-b4d40e80-60c9-11e9-8a67-32ed7a1287c5.png)
 
 <h5>Wireframes was used for creating the wireframes during the design stage.</h5>
 <h3>HTML5 & CSS3</h3>
