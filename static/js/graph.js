@@ -1,11 +1,11 @@
 /* global queue dc d3 crossfilter */
 queue()
      .defer(d3.csv, "static/data.csv")
-     .await(makeGraphs)
-     function makeGraphs(error,data){
-        var ndx=crossfilter(data)  
-   
-   
+     .await(makeGraphs);
+     
+function makeGraphs(error, data){
+     var ndx=crossfilter(data);  
+    
     show_jobTitle_selector(ndx);
     show_gender_selector(ndx);
     display_gender_percent(ndx, 'Male', '#percent-male');
@@ -17,10 +17,10 @@ queue()
     show_age_per_person(ndx);
     show_bonus_per_person(ndx);
     
-     dc.renderAll();
-     }
+    dc.renderAll();
+}
      
-    function show_jobTitle_selector(ndx) {
+function show_jobTitle_selector(ndx) {
     var dim = ndx.dimension(dc.pluck('jobTitle'));
     var group = dim.group();
     
@@ -37,29 +37,33 @@ function show_gender_selector(ndx) {
         .dimension(dim)
         .group(group);
 }
+
 function display_gender_percent(ndx, gender, element) {
     var genderPercent = ndx.groupAll().reduce(
         // Sum totals for each gender type
         function(p, v) {
             p.total++;
-            if (v.Gender === gender) {
+            if (v.gender === gender) {
                 p.gender_count++;
             }
             return p;
         },
         function(p, v) {
             p.total--;
-            if (v.Gender === gender) {
+            if (v.gender === gender) {
                 p.gender_count--;
             }
             return p;
         },
-       function() {
-            return { total: p.total, gender_count: p.gender_count };
+        function() {
+            return { total: 0, gender_count: 0 };
+        }
+   );
+
     
 
     dc.numberDisplay(element)
-        .formatNumber(d3.format('%1.2'))
+        .formatNumber(d3.format('.2%'))
         .valueAccessor(function(d) {
             if (d.gender_count == 0) {
                 return 0;
@@ -69,12 +73,11 @@ function display_gender_percent(ndx, gender, element) {
             }
         })
         .group(genderPercent);
-
-
+}
 
 
     
-    function show_gender_balance(ndx) {
+function show_gender_balance(ndx) {
     var dim = ndx.dimension(dc.pluck('gender'));
     var  group = dim.group();
     
@@ -197,7 +200,7 @@ function show_job_title_distribution(ndx) {
         .legend(dc.legend().x(320).y(20).itemHeight(15).gap(5))
         .margins({top: 10, right: 100, bottom: 30, left: 30});
 }
-function  show_perfEval_per_person(ndx){
+function show_perfEval_per_person(ndx){
     
     var name_dim = ndx.dimension(dc.pluck("perfEval"));
     var show_perfEval_per_person = name_dim.group().reduceSum(dc.pluck("perfEval"));
@@ -208,7 +211,7 @@ function  show_perfEval_per_person(ndx){
     .dimension(name_dim)
     .group(show_perfEval_per_person)
 }
-  function  show_age_per_person(ndx){
+  function show_age_per_person(ndx){
       
     var name_dim = ndx.dimension(dc.pluck("age"));
     var show_age_per_person = name_dim.group().reduceSum(dc.pluck("age"));
@@ -219,7 +222,7 @@ function  show_perfEval_per_person(ndx){
     .dimension(name_dim)
     .group(show_age_per_person)
   } 
- function  show_bonus_per_person(ndx){
+ function show_bonus_per_person(ndx){
       
     var name_dim = ndx.dimension(dc.pluck("bonus"));
     var show_bonus_per_person = name_dim.group().reduceSum(dc.pluck("bonus"));
@@ -230,7 +233,7 @@ function  show_perfEval_per_person(ndx){
     .dimension(name_dim)
     .group(show_bonus_per_person)  
 }
- function  show_bonus_per_person(ndx){
+ function show_bonus_per_person(ndx){
       
     var name_dim = ndx.dimension(dc.pluck("bonus"));
     var show_bonus_per_person = name_dim.group().reduceSum(dc.pluck("bonus"));
@@ -239,9 +242,5 @@ function  show_perfEval_per_person(ndx){
     .radius(90)
     .transitionDuration(1500)
     .dimension(name_dim)
-    .group(show_bonus_per_person)  
-
-     
+    .group(show_bonus_per_person)
  }
-
-
