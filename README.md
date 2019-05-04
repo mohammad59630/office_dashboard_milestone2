@@ -27,6 +27,12 @@ The final wireframe was put together part way through the project when I could b
 ![project1](https://user-images.githubusercontent.com/38302279/57181590-b0f80880-6e8d-11e9-9ef8-893f7df3d9f1.png)
 ![project2](https://user-images.githubusercontent.com/38302279/57181620-1e0b9e00-6e8e-11e9-985f-46caa68abc2e.png)
 ![project5](https://user-images.githubusercontent.com/38302279/57181673-b3a72d80-6e8e-11e9-8d6c-01d65451a99b.png)
+![project6](https://user-images.githubusercontent.com/38302279/57182417-a0985b80-6e96-11e9-97c1-fe8a7169c633.png)
+![p7](https://user-images.githubusercontent.com/38302279/57182421-ab52f080-6e96-11e9-83d9-3a5c3398bbfa.png)
+![p8](https://user-images.githubusercontent.com/38302279/57182422-ab52f080-6e96-11e9-9d5a-ef348721148a.png)
+![p9](https://user-images.githubusercontent.com/38302279/57182423-ab52f080-6e96-11e9-8b3f-fcd72ee93ca0.png)
+![p10](https://user-images.githubusercontent.com/38302279/57182424-abeb8700-6e96-11e9-9928-66d92d27655e.png)
+![p11](https://user-images.githubusercontent.com/38302279/57182425-ac841d80-6e96-11e9-9899-f61bace93432.png)
 
   
 
