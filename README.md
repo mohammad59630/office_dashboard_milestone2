@@ -23,6 +23,10 @@ Wireframes
 The first 2 wireframes (mobile & desktop) were created at the beginning of the project. Whilst they are similar to the final product, they do differ in that the final site displays more data visualization elements than the original wireframes showed.
 
 The final wireframe was put together part way through the project when I could better visualise what I wanted and is a lot closer to the final result it contain the 10 png file to description of project step by step.
+![project](https://user-images.githubusercontent.com/38302279/57181587-a63d7380-6e8d-11e9-9de5-b2608a0ae4f6.png)
+![project1](https://user-images.githubusercontent.com/38302279/57181590-b0f80880-6e8d-11e9-9ef8-893f7df3d9f1.png)
+![project2](https://user-images.githubusercontent.com/38302279/57181620-1e0b9e00-6e8e-11e9-985f-46caa68abc2e.png)
+![project5](https://user-images.githubusercontent.com/38302279/57181673-b3a72d80-6e8e-11e9-8d6c-01d65451a99b.png)
 
   
 
@@ -56,7 +60,7 @@ The following technologies were used in the design and build of this project.
 <h3>HTML5 & CSS3</h3>
 HTML5 & CSS3 were used to create the layout and styling of this site
 Code validators were used to check for errors with the HTML and CSS 
-AWS Cloud9
+Cloud9
 Cloud9 IDE editor used to write the HTML, CSS and JavaScript.
 <h3>Bootswatch</h3>
 Bootswatch 3.4.1 (Spacelab theme for bootstrap 3) was used to assist in the creation of the responsive grid structure for the site and also to provide some basic CSS styling.
