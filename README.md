@@ -22,7 +22,7 @@ As a user, I want to be able to easily reset the data and start over, and not ha
 Wireframes
 The first 2 wireframes (mobile & desktop) were created at the beginning of the project. Whilst they are similar to the final product, they do differ in that the final site displays more data visualization elements than the original wireframes showed.
 
-The final wireframe was put together part way through the project when I could better visualise what I wanted and is a lot closer to the final result it contain the 10 png file to description of project step by step.
+The final wireframe was put together part way through the project when I could better visualise what I wanted and is a lot closer to the final result it contain the 11 png file to description of project step by step.
 ![p1](https://user-images.githubusercontent.com/38302279/57182846-59ad6480-6e9c-11e9-8562-e4820c96317f.png)
 ![p2](https://user-images.githubusercontent.com/38302279/57182847-59ad6480-6e9c-11e9-9c3a-c2bbeede5e0f.png)
 ![p3](https://user-images.githubusercontent.com/38302279/57182848-5a45fb00-6e9c-11e9-968c-2f3173c4a8d1.png)
