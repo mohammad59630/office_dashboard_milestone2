@@ -105,6 +105,11 @@ Chrome dev tools were used to simulate multiple devices and widths, and no issue
 <h3>The following physical devices tested with no issues found.</h3>
 
 <h5>Windows desktop at HD, QHD, and UWQHD resolutions</h5>
+<P>In this images show the Office_Dashboard Responsive for using large device like WINDOWS/DESKTOP Resolution</p>
+![R1](https://user-images.githubusercontent.com/38302279/57183625-99c61480-6ea7-11e9-9ba5-bd4e4f05e482.png)
+![R2](https://user-images.githubusercontent.com/38302279/57183629-a0548c00-6ea7-11e9-95a7-2f313ea24ead.png)
+![R3](https://user-images.githubusercontent.com/38302279/57183630-a0ed2280-6ea7-11e9-960e-95b7e7b24724.png)
+
 <h5>Google Pixel 2XL</h5>
 <h5>Apple iPhone 8S</h5>
 <h5>Apple iPad mini</h5>
