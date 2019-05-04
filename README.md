@@ -33,7 +33,8 @@ The final wireframe was put together part way through the project when I could b
 ![P6](https://user-images.githubusercontent.com/38302279/57182852-5ade9180-6e9c-11e9-9b23-a76efc35c5e8.png)
 ![p9](https://user-images.githubusercontent.com/38302279/57183021-e78a4f00-6e9e-11e9-9bf4-c9a92330ee41.png)
 ![p10](https://user-images.githubusercontent.com/38302279/57183022-e78a4f00-6e9e-11e9-8461-2d30dc8002b4.png)
-![p11](https://user-images.githubusercontent.com/38302279/57183095-cb3ae200-6e9f-11e9-930d-eed2a2257d8b.png)
+![p11](https://user-images.githubusercontent.com/38302279/57183321-0094ff00-6ea3-11e9-8523-53cbe1cd75f9.png)
+
 
 
 
