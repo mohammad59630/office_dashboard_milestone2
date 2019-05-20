@@ -1,5 +1,6 @@
 /*---------------------------------------------- General Styling ------------*/
 
+
 .set-background {
     background-color: #888;
     background-image: url("../images/office_bg.jpg");
@@ -62,8 +63,8 @@ p {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 10px;
+    overflow-x:scroll;
 }
-
 
 /*---------------------------------------------- Colors ---------------------*/
 
@@ -133,6 +134,8 @@ p {
 }
 
 
+
+
 /*---------------------------------------------- Header Button --------------*/
 
 .hide-content-btn {
@@ -147,6 +150,7 @@ p {
 
 .gender-icon {
     font-size: 5em;
+   
 }
 
 .gender-percent {
@@ -166,14 +170,17 @@ p {
     width: 100%;
     height: 100%;
     margin: 0 0 10px 0;
+    
 }
 
 .dc-chart .pie-slice {
     font-size: 14px;
+    
 }
 
 .dc-chart g.row text {
     fill: black;
+    
 }
 
 

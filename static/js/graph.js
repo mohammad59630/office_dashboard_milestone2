@@ -4,7 +4,7 @@ queue()
      .await(makeGraphs);
      
 function makeGraphs(error, data){
-     var ndx=crossfilter(data);  
+     var ndx=crossfilter(data); 
     
     show_jobTitle_selector(ndx);
     show_gender_selector(ndx);

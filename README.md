@@ -3,7 +3,7 @@ A single page Application that presents information and data on over 1000 male a
 
 The page uses the D3.js library with the DC.js and crossfilter.js libraries to present the data via a series of pie charts, bar/row charts, and line charts, all designed to convey the maximum amount of information in the simplest and cleanest way possible.
 
-Finally, the page allows the user to view the individual super-heroes via a dropdown list which allows you to see the remaining heroes after filters have been applied, or to pick out an individual hero and see just their data separate to the rest.
+Finally, the page allows the user to view the individual jobTitles via a dropdown list which allows you to see the remaining jobTitle after filters have been applied, or to pick out an individual job and see just their data separate to the rest.
 
 The current deployed version can be found at https://github.com/ahsin59/office_dashboard_milestone2
 
@@ -105,14 +105,8 @@ Chrome dev tools were used to simulate multiple devices and widths, and no issue
 <h3>The following physical devices tested with no issues found.</h3>
 
 <h5>Windows desktop at HD, QHD, and UWQHD resolutions</h5>
-<P>In this images show the Office_Dashboard Responsive for using large device like WINDOWS/DESKTOP Resolution</p>
-![R1](https://user-images.githubusercontent.com/38302279/57183625-99c61480-6ea7-11e9-9ba5-bd4e4f05e482.png)
-![R2](https://user-images.githubusercontent.com/38302279/57183629-a0548c00-6ea7-11e9-95a7-2f313ea24ead.png)
-![R3](https://user-images.githubusercontent.com/38302279/57183630-a0ed2280-6ea7-11e9-960e-95b7e7b24724.png)
-
 <h5>Google Pixel 2XL</h5>
 <h5>Apple iPhone 8S</h5>
-<h5>Apple iPad mini</h5>
 <h5>Apple iPhoeX</h5>
 The site has been tested against all user stories listed in the UX section above. I was able to do everything the user would want to be able to do. I was able to compare the data easily by minimizing certain sections, I could filter the specific data I needed to, I could reset all the filters if I needed to. I was able to analyse the data and draw my own conclusions as well as verify observations on the data made by others.
 
