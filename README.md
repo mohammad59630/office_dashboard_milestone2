@@ -138,5 +138,5 @@ The original unmodified background image was sourced from google image search. I
 The favicon used was generated using this Font Awesome Favicon Generator.
 <h5>Acknowledgements</h5>
 Chris Zielinski, my Code Institute mentor, for her invaluable advice and guidance.
-<h5>The slack channel community over at Code Institute</h5>, and specifically thanks to 'jowings', 'Eventyret', and 'Niel_ci' for their helpful feedback.
+<h5>The slack channel community over at Code Institute</h5>, and specifically thanks to 'jowings', 'Eventyret', and 'Niel_ci' for their help.
 The dc.js documentation, or more specifically, the folks who wrote it, for making such a well-structured and easy to follow set of docs.
