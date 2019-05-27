@@ -8,7 +8,7 @@ Finally, the page allows the user to view the individual jobTitles via a dropdow
 The current deployed version can be found at https://github.com/ahsin59/office_dashboard_milestone2
 
 UX
-This dashboard is aimed at users who wish to analyse a large amount of data related to super-heroes and allow them to manipulate it in a way of their choosing and finally, be able to get to the specific data they require.
+This dashboard is aimed at users who wish to analyse a large amount of data related toJob-Titles and allow them to manipulate it in a way of their choosing and finally, be able to get to the specific data they require.
 
 The journey from seeing the whole data set on screen to either being able to see a specific jobTitle, or analyse the data filtered in a way of the users choosing should be straight-forward and intuitive for the user to findout the different jobTitles with genders .
 
@@ -16,11 +16,11 @@ User Stories
 As a user, I want to be able to view data on a number of jobTitle in different gender, without the need for swapping between multiple tabs and data sources.
 As a user, I want to be able to view data on an individual jobTitle and see information such as gender, gender balance, Average Bonus, Jobtitle distribution, and so on.
 As a user, I want to be able to see which jobTitle are the most highly paid amongst the jobTitles as a whole.
-As a user, I want to be able to compare the data at various levels of detail, and to look for connections between the different Jobtitle distribution - for example, does gender have show the perfEval per person per age with per person bomus.
+As a user, I want to be able to compare the data at various levels of detail, and to look for connections between the different Jobtitle distribution - for example, does gender have show the perfEval per person per age with per person bonus.
 As a user, I want to be able to draw my own conclusions from the data, for example, IT with bonus per person are more likely to have earn more bonus other then different jobTitles.
 As a user, I want to be able to easily reset the data and start over, and not have to worry about manually setting all the values back to their original values.
 Wireframes
-The first 2 wireframes (mobile & desktop) were created at the beginning of the project. Whilst they are similar to the final product, they do differ in that the final site displays more data visualization elements than the original wireframes showed.
+The wireframes (mobile & desktop) were created at the beginning of the project. Whilst they are similar to the final product, they do differ in that the final site displays more data visualization elements than the original wireframes showed.
 
 The final wireframe was put together part way through the project when I could better visualise what I wanted and is a lot closer to the final result it contain the 11 png file to description of project step by step.
 ![p1](https://user-images.githubusercontent.com/38302279/57182846-59ad6480-6e9c-11e9-8562-e4820c96317f.png)
@@ -85,8 +85,6 @@ JSHint was used to check for errors and code quality.
 Graph.js file create all charts in the  office Dashboard project barchart and pie chart.
 <h3>Backgroung image</h3>
 Background image i get from google .
-<h3>Tiny JPG</h3>
-Tiny JPG was used to reduce the size of all .jpg's (and .png's) to assist with page loading times. This was mainly to reduce the file size of the background image.
 <h3>Font Awesome</h3>
 Font Awesome was used to provide the icons for the GitHub logo in the site footer, the gender icons used in the gender section, and the caret icon used to show/hide individual sections.
 <h3>Git & GitHub</h3>
@@ -110,9 +108,6 @@ Chrome dev tools were used to simulate multiple devices and widths, and no issue
 <h5>Apple iPhoeX</h5>
 The site has been tested against all user stories listed in the UX section above. I was able to do everything the user would want to be able to do. I was able to compare the data easily by minimizing certain sections, I could filter the specific data I needed to, I could reset all the filters if I needed to. I was able to analyse the data and draw my own conclusions as well as verify observations on the data made by others.
 
-
-<h5>Known Issues</h5>
-There has been only 1 issue I could not fix, and instead have had to implement a workaround. The line chart has a horizontal legend which uses .horizontal(true) with dc.legend to change it from the default vertical legend. When .autoItemWidth is chained to it and set to true, it causes a display bug whereby the legend entries are bunched up together and overlapping, rendering it unreadable. This isn't immediately noticeable as it only happens if the line chart is hidden using the jQuery toggle, a filter is set, and then it is toggled back to be shown. It is easily fixed by reloading the page, but to avoid the user having to do this I have set .autoItemWidth to false and instead used .itemWidth with a value. Unfortunately, this doesn't display as well due to each word being a different number of characters, therefore the spacing appears uneven, but it does prevent this bug from occurring.
 
 <h5>Deployment</h5>
 The site was developed using the cloud9 IDE and uses git for version control which is then pushed to GitHub. The site is hosted on GitHub Pages and deployed there from the master branch on GitHub. There is no difference between the development version of this site, and the final version hosted on GitHub Pages.
