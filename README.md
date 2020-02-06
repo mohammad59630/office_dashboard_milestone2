@@ -5,7 +5,7 @@ The page uses the D3.js library with the DC.js and crossfilter.js libraries to p
 
 Finally, the page allows the user to view the individual jobTitles via a dropdown list which allows you to see the remaining jobTitle after filters have been applied, or to pick out an individual job and see just their data separate to the rest.
 
-The current deployed version can be found at https://github.com/ahsin59/office_dashboard_milestone2
+The current deployed version can be found at https://ahsin59.github.io/office_dashboard_milestone2/
 
 UX
 This dashboard is aimed at users who wish to analyse a large amount of data related toJob-Titles and allow them to manipulate it in a way of their choosing and finally, be able to get to the specific data they require.
